@@ -50,7 +50,7 @@ const getNoteByIdHandler = (request, h) => {
 
   const note =  notes.filter((el)=> el.id == id)
 
-  if (note !== undefined) {
+  if (note.length > 0) {
     return {
       status: 'success',
       data: {
